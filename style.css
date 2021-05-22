@@ -11,21 +11,33 @@ h1{color:grey;font-family:verdana;text-align:center}
     align:center;
 }
 
-.formdiv{
-    margin:auto;
-    background-color:white;
-    color:black;
-    width:400px;
-    align:center;
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 65%;
+}
+
+.Button, {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    margin-left:75px;
+    width: 30%;
+}
+
+.inputRow{
     line-height:2;
 }
 
 #result{
     line-height:1;
+    margin-left:75px;
 }
 
-p     { display: table-row; }
-label { display: table-cell;}
-input,select,span { display: table-cell; margin-left:40px;}
-
-
+footer{
+    margin-top: 20px;
+}

@@ -7,14 +7,15 @@
     <title>Simple Interest Calculator</title>
     <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
-        <div class="formdiv">
-                <p><label for="principal">Amount</label><input type="number"  id="principal"></p>
-                <p><label for="rate">Interest Rate</label><input type="range"  id="rate" onchange="updateRate()" step="0.25" min="1" max="20" value="10.25">
-                <span id="rate_val">
-                10.25%
-                </span> </p>
+        <div class="container">        
+            <div class="inputRow1">Amount</div>
+            <div class="inputRow1a"><input type="number"  id="principal"></div>
+                <div class="inputRow2">Interest Rate</div>
+                <div class="inputRow2a"><input type="range"  id="rate" onchange="updateRate()" step="0.25" min="1" max="20" value="10.25">
+                <span id="rate_val">10.25%</span></div>
             
-                <p><label for="years">No. of Years</label> <select id="years">
+                <div class="inputRow3">No. of Years</div>
+                <div class="inputRow3a"><select id="years">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -25,14 +26,14 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-                </select></p>
-                        
-                <button onclick="compute()">Compute Interest</button>
+                </select></div>
+            <div class="Button"><button onclick="compute()">Compute Interest</button></div>
+        </div>   
+        
                 
-                <span id="result">
+        <div id="result"> </div>
+        
 
-                </span>
-        </div>
         <footer> &#169; This Calculator belongs to Jroobz</footer>
     </div>
       
