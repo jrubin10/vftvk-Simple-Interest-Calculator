@@ -6,18 +6,18 @@ function compute()
     var years = document.getElementById("years").value;
     var interest = principal * years * rate / 100;
     var year=new Date().getFullYear()+parseInt(years);
-    var interestExplanation="If you deposit " +principal+",\nat an interest rate of "+rate+",\nYou will receive an amount of "+interest+",\nin the year "+year;
+    var interestExplanation="If you deposit " +principal+",\<br\>at an interest rate of "+rate+"%,\<br\>You will receive an amount of "+interest+",\<br\>in the year "+year;
     if (principal<=0) {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
         return false;
     }
-    document.getElementById("result").innerText=interestExplanation;
+    document.getElementById("result").innerHTML=interestExplanation;
 }
 
 function updateRate()
 {
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerText=rateval+"%";
 }
         

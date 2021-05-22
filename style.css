@@ -1,7 +1,31 @@
-body {background-color:black;font-family:arial;color:white}
-h1{color:grey;font-family:verdana}
+body {background-color:black;font-family:arial;color:white;align:center;}
+h1{color:grey;font-family:verdana;text-align:center}
+
 .maindiv{
-   background-color:white;color:black;width:300;padding:20;border-radius:25;align:center}
+    margin:auto;
+    background-color:white;
+    color:black;
+    width:500px;
+    padding:20px;
+    border-radius:25px;
+    align:center;
 }
+
+.formdiv{
+    margin:auto;
+    background-color:white;
+    color:black;
+    width:400px;
+    align:center;
+    line-height:2;
+}
+
+#result{
+    line-height:1;
+}
+
+p     { display: table-row; }
+label { display: table-cell;}
+input,select,span { display: table-cell; margin-left:40px;}
 
 
